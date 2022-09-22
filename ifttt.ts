@@ -18,11 +18,11 @@ namespace esp8266 {
     /**
      * Return true if data is uploaded to ThingSpeak successfully.
      */
-    //% subcategory="ThingSpeak"
+    //% subcategory="IFTTT"
     //% weight=30
     //% blockGap=8
-    //% blockId=esp8266_is_thingspeak_data_uploaded
-    //% block="ThingSpeak data uploaded"
+    //% blockId=esp8266_is_ifttt_data_sent
+    //% block="IFTTT data sent"
     export function isIFTTTsent(): boolean {
         return IFTTTsent
     }
