@@ -1,12 +1,12 @@
 /*******************************************************************************
- * Functions for ThingSpeak
+ * Functions for IFTTT
  *
- * Company: Cytron Technologies Sdn Bhd
- * Website: http://www.cytron.io
- * Email:   support@cytron.io
+ * Company: 
+ * Website: 
+ * Email:   
  *******************************************************************************/
 
-// ThingSpeak API url.
+// IFTTT API url.
 const IFTTT_API_URL = "maker.ifttt.com"
 
 namespace esp8266 {
@@ -28,8 +28,10 @@ namespace esp8266 {
     }
 
 
-
-    //% weight=30
+    //% subcategory="IFTTT"
+    //% weight=29
+    //% blockGap=8
+    //% blockId=esp8266_trigger_IFTTT
     //% block="Trigger IFTTT Event Name %eventname Key %key Value 1 %value1 Value 2 %value2 Value 3 %value3"
     export function triggerIFTTT(eventname: string, key: string, value1: string, value2: string, value3: string) {
         sendCommand("AT+CIPSTART=\"TCP\",\"maker.ifttt.com\",80")
